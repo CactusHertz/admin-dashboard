@@ -16,8 +16,6 @@
 .sidebar {
     background-color: #059669;
     grid-row: 1/3;
-
-    
 }
 
 .work-area {
@@ -31,15 +29,19 @@
     padding: 20px;
 }
 
-.projects,
-.announcements,
-.trending {
-    background-color: #f8fafc;
-    
+.project-container {
+    grid-row: 1 / 3;
 }
 
 .projects {
-    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
 
-
+.project,
+.announcement,
+.trending {
+    background-color: #f8fafc;
 }
