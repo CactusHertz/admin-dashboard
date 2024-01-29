@@ -11,11 +11,72 @@
 
 .header {
     background-color: #f8fafc;
-    
 }
+
+.row{
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    gap: 20px;
+}
+.search {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+
+input[type="text"] {
+    background-color: #cbd5e1;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+}
+.profile-picture-big {
+    grid-row: 1 / 3;
+    justify-content: right;
+}
+.user-title {
+    font-size: 1.5em;
+}
+
+.actions{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+button {
+    background-color: #059669;
+    color: #f8fafc;
+    font-size: 1em;
+
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
 .sidebar {
     background-color: #059669;
     grid-row: 1/3;
+}
+.nav {
+    color: #f8fafc;
+}
+
+.logo {
+    color: #f8fafc;
+    font-size: 2em;
+}
+
+li {
+    font-size: 1.2em;
+    padding: 5px;
 }
 
 .work-area {
