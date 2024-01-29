@@ -70,18 +70,19 @@ button {
     grid-row: 1/3;
 }
 .nav {
-    color: #f8fafc;
-}
+    color: #f8fafc; 
 
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
 .logo {
     color: #f8fafc;
     font-size: 2em;
+
+    display: grid;
+    grid-template-columns: 1fr 5fr;
 }
 
-li {
-    font-size: 1.2em;
-    padding: 5px;
-}
 
 .work-area {
     background-color: #cbd5e1;
