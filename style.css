@@ -68,12 +68,15 @@ button {
 .sidebar {
     background-color: #059669;
     grid-row: 1/3;
+    padding: 1em;
 }
 .nav {
     color: #f8fafc; 
 
+    padding-top: 3em;
     display: grid;
     grid-template-columns: 1fr 5fr;
+    gap: .5em;
 }
 .logo {
     color: #f8fafc;
@@ -81,6 +84,22 @@ button {
 
     display: grid;
     grid-template-columns: 1fr 5fr;
+    gap: .5em;
+}
+div.logo > div {
+    display: inline-grid;
+    align-items: center;
+}
+svg {
+    height: 1.5em;
+    fill: white;
+    justify-self: right;
+}
+
+div.nav > * {
+    font-size: 1.5em;
+    display: inline-grid;
+    align-items: center;
 }
 
 
@@ -113,13 +132,14 @@ button {
     background-color: #f8fafc;
     border-radius: 10px;
     padding: 1em;
-    box-shadow: 0 0 .25em #64748b;
+    box-shadow: 0.1em 0 .25em #64748b;
 }
 
 .options {
+    padding-top: 1em;
     display: grid;
     grid-template-columns: 3fr repeat(3, 1fr);
-    grid-template-areas: ".  favorite watch branch";
+    grid-template-areas: ".  favorite watch fork";
 }
 .favorite {
     grid-area: favorite;
@@ -127,8 +147,8 @@ button {
 .watch {
     grid-area: watch;
 }
-.branch {
-    grid-area: branch;
+.fork {
+    grid-area: fork;
 }
 
 .project {
@@ -144,6 +164,10 @@ p {
     font-size: 1em;
     color: #64748b;
 
+}
+div.options > svg {
+    fill: black;
+    justify-self: right;
 }
 
 
