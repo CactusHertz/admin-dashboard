@@ -89,10 +89,10 @@ button {
 
     display: grid;
     grid-template-columns: 5fr 2fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
+    grid-template-rows: 3fr 2fr;
+    gap: 2em;
 
-    padding: 20px;
+    padding: 1em;
 }
 
 .project-container {
@@ -104,10 +104,50 @@ button {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
+    height: 70%;
 }
 
 .project,
-.announcement,
+.announcements,
 .trending {
     background-color: #f8fafc;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0 0 .25em #64748b;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr);
+    grid-template-areas: ".  favorite watch branch";
+}
+.favorite {
+    grid-area: favorite;
+}
+.watch {
+    grid-area: watch;
+}
+.branch {
+    grid-area: branch;
+}
+
+.project {
+    border-left-style: solid;
+    border-left-color: #059669;
+    border-left-width: .75em;
+    
+}
+.project-title {
+    font-size: 1.5em;
+}
+p {
+    font-size: 1em;
+    color: #64748b;
+
+}
+
+
+.title {
+    font-size: 1.75em;
+    padding-bottom: .5em;
 }
