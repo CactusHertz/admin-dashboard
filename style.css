@@ -31,12 +31,12 @@ body {
     display: inline-grid;
     align-self: center;
 }
-.account {
+.personal-account {
     display: grid;
     grid-template-columns: 3fr 1fr 3fr;
     gap: 1em;
 }
-.account > * {
+.personal-account > * {
     display: inline-grid;
     align-self: center;
 }
@@ -201,7 +201,8 @@ hr {
 .project-title {
     font-size: 1.5em;
 }
-p {
+p,
+.project-name {
     font-size: 1em;
     color: #64748b;
 
@@ -216,4 +217,14 @@ div.options > svg {
 .title {
     font-size: 1.75em;
     padding-bottom: .5em;
+}
+
+.account {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    padding: .5em;
+}
+.trending-profile-pic {
+    grid-row: 1 / 3;
 }
