@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Roboto';
+    background-color: #cbd5e1;
 }
 
 .container {
@@ -15,6 +16,7 @@ body {
 
 .header {
     background-color: #f8fafc;
+    box-shadow: 0.1em 0 .25em #64748b;
 }
 .row{
     display: grid;
@@ -138,7 +140,7 @@ div.nav > * {
 
 
 .work-area {
-    background-color: #cbd5e1;
+    
 
     display: grid;
     grid-template-columns: 5fr 2fr;
@@ -228,3 +230,4 @@ div.options > svg {
 .trending-profile-pic {
     grid-row: 1 / 3;
 }
+
